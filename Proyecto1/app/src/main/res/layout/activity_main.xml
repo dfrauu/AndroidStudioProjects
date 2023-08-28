@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackGround"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="Registrarse"
+        android:textColor="@color/Color_letra"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/st1"
+        app:layout_constraintStart_toStartOf="@+id/st1"
+        app:layout_constraintTop_toBottomOf="@+id/st1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="Comunidad de la Arenosa"
+        android:textColor="@color/Color_letra"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="80dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="Concurso de oratoria"
+        android:textColor="@color/Color_letra"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/st1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/boton"
+        android:fontFamily="@font/open_sans_bold"
+        android:onClick="entrar"
+        android:text="Entrar"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Switch
+        android:id="@+id/st1"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/open_sans"
+        android:minHeight="100dp"
+        android:onClick="registrarse"
+        android:switchMinWidth="55dp"
+        android:textColor="@color/Color_letra"
+        android:thumbTint="@color/white"
+        android:trackTint="@color/boton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="267dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        android:hint="Usuario"
+        android:inputType="text"
+        android:textColor="@color/Color_letra"
+        android:textColorHint="#C8C2AE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        android:hint="Contraseña"
+        android:inputType="numberPassword"
+        android:textColor="@color/Color_letra"
+        android:textColorHint="#C8C2AE"
+        app:layout_constraintStart_toStartOf="@+id/usuario"
+        app:layout_constraintTop_toBottomOf="@+id/usuario" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
